@@ -37,9 +37,9 @@
         $(function() {
           if( navigator.geolocation ) {
             navigator.geolocation.getCurrentPosition( function(position) {
-              $('#map-container').storeLocator({'dataType': 'json', 'dataLocation': '../../locations.php', 'defaultLoc': true, 'defaultLat': position.coords.latitude, 'defaultLng': position.coords.longitude });
+              $('#map-container').storeLocator({'dataType': 'json', 'dataLocation': 'locations.php', 'defaultLoc': true, 'defaultLat': position.coords.latitude, 'defaultLng': position.coords.longitude });
             }, function(error) {
-              $('#map-container').storeLocator({'dataType': 'json', 'dataLocation': '../../locations.php'});
+              $('#map-container').storeLocator({'dataType': 'json', 'dataLocation': 'locations.php'});
             });
           }
         });
